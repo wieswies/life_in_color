@@ -48,7 +48,7 @@ var path = d3.geoPath()
 
 // Load world shape AND list of connection
 d3.queue()
-  .defer(d3.json, "https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/world.geojson")  // World shape
+  .defer(d3.json, "../data/europe.geo.json")  // World shape
   .defer(d3.csv, "https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/data_connectionmap.csv") // Position of circles
   .await(ready);
 

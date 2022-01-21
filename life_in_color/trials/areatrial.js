@@ -13,9 +13,9 @@ var svg = d3.select("#my_dataviz")
           "translate(" + margin.left + "," + margin.top + ")");
 
 //Read the data
-d3.csv("area_trial.csv").then(function(data) {
-//d3.csv("https://raw.githubusercontent.com/holtzy/data_to_viz/master/Example_dataset/5_OneCatSevNumOrdered.csv", function(data) {
-
+//d3.csv("area_trial.csv").then(function(data) {
+d3.csv("https://raw.githubusercontent.com/holtzy/data_to_viz/master/Example_dataset/5_OneCatSevNumOrdered.csv", function(data) {
+//d3.csv("https://raw.githubusercontent.com/wieswies/life_in_color/main/life_in_color/data/area_chart_per_year.csv", function(data) {
   // group the data: one array for each value of the X axis.
   var sumstat = d3.nest()
     .key(function(d) { return d.year;})
@@ -37,7 +37,7 @@ d3.csv("area_trial.csv").then(function(data) {
     .range([ 0, width ]);
   svg.append("g")
     .attr("transform", "translate(0," + height + ")")
-    .call(d3.axisBottom(x).ticks(5));
+    .call(d3.axisBottom(x).ticks(8));
 
   // Add Y axis
   var y = d3.scaleLinear()
