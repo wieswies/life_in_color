@@ -1,0 +1,26 @@
+@font-face {
+  font-family: "Quosm";
+  src: url(fonts/Quosm.ttf);
+}
+
+body {
+  font-family: "Quosm";
+}
+
+#workcount {
+  width: 100%;
+  width: 500px;
+  height: 700px;
+}
+
+#workcount_season {
+  width: 100%;
+  width: 250px;
+  height: 500px;
+}
+
+#workcount_sorted {
+  width: 100%;
+  width: 500px;
+  height: 700px;
+}

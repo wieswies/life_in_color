@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="description" content="Webpage description goes here" />
+  <meta charset="utf-8">
+  <title>Martrioska</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="">
+  <link rel="stylesheet" href="css/myhomepage.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="script/homepage.js"></script>
+  
+  <link rel="apple-touch-icon" sizes="152x152" href="favicon_package_v0.16/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon_package_v0.16/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon_package_v0.16/favicon-16x16.png">
+	<link rel="manifest" href="favicon_package_v0.16/site.webmanifest">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+<div class='vidContain'>
+        <video autoplay muted loop id="VideoElement"><source src="video/background.mp4" type="video/mp4"></video>
+    <div class="topbar">
+    	<div class="left-bar">
+		<a class="title">martrioska</a>
+		</div>
+		<div class="right-bar">
+			<a  id="firstanchor" onclick="changePageOne()">about us</a>
+			<a  id="secondanchor" onclick="changePageTwo()">the project</a>
+			<a  id="thirdanchor" onclick="changePageThree()">credits</a>
+		</div>
+	</div>
+	<div class="bottombar">
+		<p><a id="main-anchor" onclick="transitionToPage('martrioska.html')" >Learn more about gender inequality in the art history field</a></p>
+	</div>
+</div>
+<div class="aboutus" id="aboutus">
+	<div class="pagetitle">
+		<div class="pagename">about us</div>
+		<div class="pageexit"><a class="exitanchor" onclick="changePageBack()">X</a></div>
+	</div>
+	<div class="about-content">
+		<div class="person">
+			<p class="person-name">Nooshin</p>
+			<p class="person-surname">Shahidzadeh</p>
+			<p class="person-description">Master's Degree Student of DHDK at the University of Bologna. Graduated in <span class="highlighted-two">Software Engineering.</span></p>
+			<p class="person-role">Data manipulation</p>
+			<p class="person-role">Data analysis</p>
+			<p class="person-role">Data visualization</p>
+			<p class="person-role">Data cleaning</p>
+
+			<p class="person-mail"><a href="mailto:noo.shahidzadehasadi@studio.uniboit">Contact</a></p>
+		</div>
+		<div class="person">
+			<p class="person-name">Giulia</p>
+			<p class="person-surname">Manganelli</p>
+			<p class="person-description">Master's Degree Student of DHDK at the University of Bologna. Graduated in <span class="highlighted">Humanities.</span></p>
+			<p class="person-role"></p>
+			<p class="person-role">Data collection</p>
+			<p class="person-role">Data visualization</p>
+			<p class="person-role">Communication strategy</p>
+			<p class="person-role">Storytelling</p>
+			<p class="person-mail"><a href="mailto:giulia.manganelli3@studio.unibo.it">Contact</a></p>
+		</div>
+		<div class="person">
+			<p class="person-name">Marco</p>
+			<p class="person-surname">Grasso</p>
+			<p class="person-description">Master's Degree Student of DHDK at the University of Bologna. Graduated in <span class="highlighted">Humanities.</span></p>
+			<p class="person-role">Data manipulation</p>
+			<p class="person-role">Web development</p>
+			<p class="person-role">Storytelling</p>
+			<p class="person-role">Graphics</p>
+			
+			<p class="person-mail"><a href="mailto:marco.grasso4@studio.unibo.it">Contact</a></p>
+			
+		</div>
+
+
+	</div>
+</div>
+<div class="theproject" id="theproject">
+	<div class="pagetitle">
+		<div class="pagename">The project</div>
+		<div class="pageexit"><a class="exitanchor" onclick="changePageBack()">X</a></div>
+	</div>
+	<div class="theproject-content">
+		<p>The <span class = "highlighted">martrioska</span> project has been carried out for the exam of <a href="https://www.unibo.it/it/didattica/insegnamenti/insegnamento/2020/443749">Electronic Publishing and Digital Storytelling</a> held by Professor Marilena Daquino, within the <a href="https://corsi.unibo.it/2cycle/DigitalHumanitiesKnowledge">Digital Humanities and Digital Knowledge</a> course at the University of Bologna.</p>
+		<p>The general objective of the project is meant to question topics related to the field of <span class= "highlighted">art history</span>, exploiting linked open data as much as possible and taking advantage of the information available on the <span class= "highlighted"><a href="http://artchives.fondazionezeri.unibo.it/">ARTchives</a></span> project and other data-driven realities such as <span class= "highlighted">Wikidata</span>.</p>
+		<p>Specifically, our study focuses on the <span class= "highlighted">issue of gender inequality</span>, observing the distribution of the male and female component in the history of art, reflecting and analysing the <span class="highlighted">limited visibility</span> of the latter.</p>
+	</div>
+</div>
+<div class="credits" id="credits">
+		<div class="pagetitle">
+		<div class="pagename">credits</div>
+		<div class="pageexit"><a class="exitanchor" onclick="changePageBack()">X</a></div>
+	</div>
+	<div class="credits-content">
+	<p>Copyright material available on this website is licensed under a <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International (CC BY 4.0)</a> licence unless indicated otherwise.</p>
+	<p>Some of the data visualizations present in the webpage are powered by <a href="https://www.amcharts.com/">amCharts</a> under free license and referenced by an attribution logo at the bottom left of every chart.</p>
+	<p>Data have been collected from <a href="https://www.wikidata.org/wiki/Wikidata:Main_Page">Wikidata</a> and <a href="http://artchives.fondazionezeri.unibo.it/">ARTchives</a></span>. Both sources are available under <a href="https://creativecommons.org/share-your-work/public-domain/cc0/">CC0 license.</a></p>
+	</div>
+	
+</div>
+
+<script>
+
+</script>
+</body>
+</html>

@@ -1,0 +1,287 @@
+/* Index
+Fonts in use*/
+@font-face {
+  font-family: "Quosm-Bold";
+  src: url(fonts/Quosm-Bold.ttf);
+}
+@font-face {
+  font-family: "Quosm";
+  src: url(fonts/Quosm.ttf);
+}
+@font-face {
+  font-family: "Manus";
+  src: url(fonts/Manus.ttf);
+}
+
+/* Index
+Default settings */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Index
+Body */
+body {
+  background: url(../img/aa_opening_background.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: "Quosm";
+}
+
+/* Index
+Header */
+li,
+a {
+  font-family: "Quosm";
+  font-size: 16px;
+  text-decoration: none;
+  margin: 10px;
+}
+
+header {
+  background-color: cornsilk;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px 10%;
+}
+
+.header_title {
+  font-family: "Quosm-Bold";
+  color: rgb(54, 83, 61);
+  cursor: pointer;
+  margin-right: auto;
+}
+
+.nav_links {
+  list-style: none;
+  color: rgb(54, 83, 61);
+  cursor: pointer;
+}
+
+.nav_links li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.nav_links li a {
+  color: rgb(54, 83, 61);
+  transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover {
+  color: rgb(243, 186, 28);
+}
+
+/* Index
+Text layout */
+h1.quote {
+  font-family: "Manus";
+  font-size: 30px;
+  color: rgba(54, 83, 61);
+  /* Most dominant blue from painting: (50, 84, 97)*/
+  line-height: 30px;
+  text-align: left;
+  letter-spacing: 2px;
+}
+
+h1.title {
+  font-family: "Quosm-Bold";
+  font-size: 30px;
+  color: rgb(54, 83, 61);
+}
+
+h2.title {
+  font-family: "Quosm-Bold";
+  font-size: 25px;
+  color: rgb(54, 83, 61);
+}
+
+p {
+  font-family: "Quosm";
+  font-size: 15px;
+  color: rgb(54, 83, 61);
+}
+
+p.quote {
+  font-family: "Manus";
+  font-size: 30px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+/* Index
+Hierarchical section layout */
+#home {
+  background-image: url(../img/aa_opening_background.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.flow-01 {
+  background: rgb(255, 248, 220);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 248, 220, 0) 0%,
+    rgba(255, 248, 220, 1) 100%
+  );
+}
+
+.about {
+  background: url(../img/ad_flow_2.jpg);
+  background: rgb(255, 248, 220);
+  align-items: center;
+}
+
+.flow-02 {
+  background: rgb(255, 248, 220);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 248, 220, 1) 0%,
+    rgba(116, 137, 125, 1) 57%,
+    rgba(81, 109, 101, 1) 84%
+  );
+}
+
+.storyline {
+  position: relative;
+  background-color: rgb(81, 109, 101);
+}
+
+.flow-03 {
+  background: rgb(255, 248, 220);
+  background: linear-gradient(
+    0deg,
+    rgba(255, 248, 220, 1) 0%,
+    rgba(116, 137, 125, 1) 57%,
+    rgba(81, 109, 101, 1) 84%
+  );
+}
+
+/* Index
+Floating boxes */
+.box {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.opening_portrait {
+  width: 300px;
+  height: 400px;
+  background: url(../img/ac_portrait_opening.jpg) no-repeat center / cover;
+  border-radius: 8px;
+}
+
+.opening_text {
+  width: 400px;
+  height: 270px;
+  background-color: rgba(255, 248, 220, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  border-radius: 8px;
+  margin-left: -75px;
+  margin-top: 200px;
+}
+
+.opening_text a {
+  font-size: 12px;
+  text-decoration: none;
+  text-transform: lowercase;
+  background-color: rgb(243, 186, 28);
+  color: rgb(54, 83, 61);
+  padding: 10px 10px;
+  align-items: left;
+  display: inline-block;
+}
+
+.about_visual {
+  position: absolute;
+  padding: 10px;
+  width: 300px;
+  height: 220px;
+  background: url(../img/about/vangoghmuseum-s0011V1962-800.jpg) no-repeat
+    center / cover;
+  border-radius: 8px;
+  right: 55%;
+}
+
+.about_text {
+  position: absolute;
+  width: 400px;
+  height: 270px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  border-radius: 8px;
+  margin-left: 331px;
+  margin-top: 0px;
+}
+
+#box_workcount_season {
+  height: 50vh;
+  width: 35vw;
+  background-color: rgba(255, 248, 220, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 25px;
+  padding: 30px;
+  border-radius: 8px;
+}
+
+/* Index
+Charts */
+#workcount {
+  position: absolute;
+  width: 100%;
+  height: 500px;
+}
+
+#workcount_season {
+  position: absolute;
+  width: 90%;
+  height: 90%;
+}
+
+#workcount_sorted {
+  position: absolute;
+  width: 100%;
+  height: 500px;
+}
+
+#animated_createdin {
+  position: absolute;
+  width: 100%;
+  height: 500px;
+}
+
+/* Index
+Trials */
+#chartdiv {
+  width: 100%;
+  height: 550px;
+}

@@ -1,0 +1,1984 @@
+@font-face {
+  font-family: "Maison Neue";
+  src: url(fonts/maison-neue-light.ttf);
+}
+
+@font-face {
+  font-family: "Gurmukhi";
+  src: url(fonts/GurmukhiMN-01.ttf);
+}
+
+@font-face {
+  font-family: "Typewrite";
+  src: url(fonts/Typewrite.ttf);
+}
+
+@font-face {
+  font-family: "TypewriteSmall";
+  src: url(fonts/AlbertsthalTypewriter.ttf);
+}
+
+@font-face {
+  font-family: "Highlight";
+  src: url(fonts/FreightBigCmpProLight-Italic.otf);
+}
+
+body {
+  color: white;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: visible; /* change to hidden */
+  margin: 0;
+  opacity: 0;
+  transition: opacity 0.1s;
+}
+
+.mtrk-header {
+  position: fixed;
+  width: 100%;
+  height: 40px;
+  top: 0;
+  border-bottom: 0.5px solid black;
+  color: black;
+  z-index: 300;
+  background-color: rgb(243, 186, 28);
+  transition: background-color 2s;
+}
+
+.mtrk-header-pink {
+  background-color: #e8cdda !important;
+}
+
+.mtrk-sidebar {
+  display: none;
+  position: fixed;
+  width: 6%;
+  height: 100%;
+  top: 0;
+  margin-left: 20px;
+  text-align: center;
+  animation-name: fadeInLeft;
+  animation-duration: 2s;
+  z-index: 100;
+}
+
+.title {
+  font-family: "Gurmukhi", serif;
+  font-size: 26px;
+  letter-spacing: 0.07rem;
+  margin: 0;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.right-bar {
+  float: right;
+  width: 60%;
+  text-transform: uppercase;
+  font-family: "Maison Neue", serif;
+  position: relative;
+  font-size: 0.7rem;
+  margin-top: 16px;
+}
+
+.right-bar a {
+  font-size: 0.7rem;
+  margin-right: 25px;
+  letter-spacing: 0.75rem;
+}
+.right-bar a:last-child {
+  margin-right: 0;
+}
+.left-bar {
+  float: left;
+  width: 20%;
+  height: 40px;
+}
+
+#sideline {
+  margin-top: 100px;
+  width: 50px; /* you can use % */
+  height: 70%;
+}
+
+.mtrskimg {
+  position: relative;
+  top: -65%;
+  margin-bottom: 20px;
+}
+
+#mtrsk1 {
+  width: 82%;
+}
+
+#mtrsk2 {
+  width: 70%;
+}
+
+#mtrsk3 {
+  width: 60%;
+  margin-right: 20%;
+  margin-left: 20%;
+}
+
+#mtrsk4 {
+  width: 50%;
+  margin-right: 25%;
+  margin-left: 25%;
+}
+
+#mtrsk5 {
+  width: 40%;
+  margin-right: 30%;
+  margin-left: 30%;
+}
+
+input {
+  border: none;
+  outline: none;
+}
+
+.intro {
+  font-family: "Maison Neue";
+  display: block;
+  margin-left: 15%;
+  margin-bottom: 35%;
+  width: 80%;
+  color: black;
+  z-index: 1;
+  margin-top: 140px;
+  text-align: center;
+  text-justify: inter-word;
+  height: 100vh;
+}
+
+.content {
+  font-family: "Maison Neue";
+  display: block;
+  opacity: 1;
+  margin-left: 10%;
+  width: 80%;
+  color: black;
+  z-index: 1;
+  text-align: justify;
+  text-justify: inter-word;
+  text-align: center;
+  padding-top: 40px;
+}
+
+.content07 {
+  display: block;
+  margin-left: 0%;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(243, 186, 28);
+  z-index: 90000;
+}
+
+.content07-innercontent {
+  font-family: "Maison Neue";
+  display: block;
+  opacity: 1;
+  margin-left: 10%;
+  width: 80%;
+  color: black;
+  z-index: 1;
+  text-align: justify;
+  text-justify: inter-word;
+  text-align: center;
+  padding-top: 40px;
+}
+
+.intro p {
+  text-align: center;
+  font-family: "Maison Neue";
+  font-size: 40px;
+  margin-right: 20%;
+  margin-left: 7%;
+  display: none;
+}
+
+.intro p img {
+  margin: auto;
+  animation: blinker 2.5s linear infinite;
+  -webkit-animation: fade_move_down 4s ease-in-out infinite;
+}
+
+.arrow {
+  width: 7%;
+  height: auto;
+  margin-right: 20%;
+  margin-left: 7%;
+}
+
+.test {
+  position: relative;
+  white-space: nowrap;
+}
+
+.test2 {
+  position: relative;
+  white-space: nowrap;
+}
+
+.test3 {
+  position: relative;
+  white-space: nowrap;
+}
+
+.test4 {
+  position: relative;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.test4-link {
+  color: black;
+  text-decoration: none;
+}
+.myunderlined2 {
+  white-space: nowrap;
+}
+
+.test:after {
+  opacity: 0;
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Place the pseudo element right under the content */
+  top: 0;
+  left: 0;
+  background: linear-gradient(to top, #e8cdda 70%, transparent 30%);
+  animation-name: highlight;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+  animation-delay: 3000ms;
+  animation-iteration-count: finite;
+}
+
+.test2:after {
+  opacity: 0;
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Place the pseudo element right under the content */
+  top: 0;
+  left: 0;
+  background: linear-gradient(to top, #c4ddda 70%, transparent 30%);
+  animation-name: highlight;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+  animation-delay: 2500ms;
+  animation-iteration-count: finite;
+}
+
+.test3:after {
+  opacity: 0;
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Place the pseudo element right under the content */
+  top: 0;
+  left: 0;
+  background: linear-gradient(to top, #cccccc 70%, transparent 30%);
+  animation-name: highlight;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+  animation-delay: 2500ms;
+  animation-iteration-count: finite;
+}
+
+.test4:after {
+  opacity: 0;
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Place the pseudo element right under the content */
+  top: 0;
+  left: 0;
+  background: linear-gradient(to top, #000000 10%, transparent 10%);
+  animation-name: highlight;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+  animation-delay: 2500ms;
+  animation-iteration-count: finite;
+}
+
+@keyframes highlight {
+  0% {
+    width: 0;
+    opacity: 0;
+  }
+
+  100% {
+    width: 100%;
+    opacity: 1;
+  }
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes fade_move_down {
+  0% {
+    -webkit-transform: translate(0, -10px) rotate(0deg);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translate(0, 10px) rotate(0deg);
+    opacity: 0;
+  }
+}
+
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeOutLeft {
+  0% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+}
+
+/* ----------------------------- TEXT SECTIONS  ----------------------------- */
+
+.text-section {
+  margin-top: 100px;
+  margin-bottom: 20%;
+}
+
+.text-section p {
+  margin-top: 30px;
+  margin-bottom: 40px;
+  text-align: center;
+  font-family: "Maison Neue";
+  font-size: 30px;
+  line-height: 50px;
+}
+
+.text-section-pic {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  max-width: 12%;
+  opacity: 0;
+}
+
+.text-section-pic2 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  max-width: 12%;
+  opacity: 0;
+}
+
+.text-section-pic3 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  max-width: 12%;
+  opacity: 0;
+}
+
+.text-section p img {
+  margin: auto;
+  animation: blinker 2.5s linear infinite;
+  -webkit-animation: fade_move_down 4s ease-in-out infinite;
+}
+
+.smallarrow {
+  width: 4%;
+  height: auto;
+  margin-right: 20%;
+  margin-left: 7%;
+  opacity: 0;
+}
+
+.small-arrow1 {
+  opacity: 0;
+}
+
+.small-arrow2 {
+  opacity: 0;
+}
+
+.small-arrow3 {
+  opacity: 0;
+}
+
+.small-arrow1 img {
+  width: 4%;
+  height: auto;
+  margin-right: 20%;
+  margin-left: 7%;
+}
+
+.small-arrow2 img {
+  width: 4%;
+  height: auto;
+  margin-right: 20%;
+  margin-left: 7%;
+}
+
+.small-arrow3 img {
+  width: 4%;
+  height: auto;
+  margin-right: 20%;
+  margin-left: 7%;
+}
+
+.smallarrow-single {
+  width: 4%;
+  height: auto;
+  margin-right: 20%;
+  margin-left: 7%;
+}
+
+.second-arrow {
+  opacity: 0;
+}
+
+.second-arrow2 {
+  opacity: 0;
+}
+
+.third-arrow {
+  opacity: 0;
+}
+
+.small-text-section {
+  margin-bottom: 50%;
+}
+
+.text-section p.bottom-paragraph {
+  margin-top: 200px;
+  display: none;
+}
+
+.text-section p.bottom-paragraph2 {
+  margin-top: 100px;
+  display: none;
+}
+
+.text-section p.bottom-paragraph3 {
+  margin-top: 200px;
+  display: none;
+}
+
+.container-img {
+  position: relative;
+  width: 100%;
+  height: 40vh;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.imageTwo {
+  display: block;
+}
+
+.imageTwo img {
+  position: absolute;
+  top: 0;
+  left: 44%;
+}
+
+.imageOne img {
+  position: absolute;
+  top: 0;
+  left: 44%;
+}
+
+.text-section-below {
+  display: none;
+  margin-top: 150px;
+}
+
+.count-section-text {
+  display: none;
+  margin-top: 100px;
+}
+.count-section-text3 {
+  opacity: 0;
+  margin-top: 60px;
+  margin-bottom: 200px;
+}
+
+.late-text-section {
+  margin-top: 200px;
+}
+
+.estonia-text {
+  opacity: 0;
+}
+
+.slovenia-text {
+  opacity: 0;
+}
+
+.final-text-section {
+  margin-top: 30vh;
+}
+
+.final-text-section2 p {
+  opacity: 0;
+}
+
+.final-text-section2 {
+  margin-top: 40vh;
+  margin-bottom: 70vh;
+}
+
+.final-text-section3 {
+  margin-top: 40vh;
+  margin-bottom: 70vh;
+}
+
+.final-text-section3-p {
+  margin-top: 100px !important;
+  opacity: 0;
+}
+
+.before-scholarly-section {
+  margin-bottom: 0px;
+  margin-top: 60vh;
+}
+
+.arrow-group {
+  margin-top: 150px;
+}
+
+.before-map-text-section {
+  margin-top: 60vh;
+}
+
+.after-map-text-section {
+  margin-top: 60vh;
+}
+
+.before-occupation-text-section {
+  margin-top: 60vh;
+}
+
+.before-occupation-text-intro {
+  opacity: 0;
+}
+
+.before-map-text-intro {
+  opacity: 0;
+}
+.after-map-text-intro {
+  opacity: 0;
+}
+
+/* ----------------------------- opening matrioska ----------------------------- */
+
+.container-img2 {
+  position: relative;
+  width: 100%;
+  height: 40vh;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.container-img3 {
+  position: relative;
+  width: 100%;
+  height: 40vh;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.container-img4 {
+  position: relative;
+  width: 100%;
+  height: 40vh;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.imageTwo2 {
+  display: block;
+}
+
+.imageTwo2 img {
+  position: absolute;
+  top: 0;
+  left: 44%;
+}
+
+.imageOne2 img {
+  position: absolute;
+  top: 0;
+  left: 44%;
+}
+
+.imageOne3 img {
+  position: absolute;
+  top: 0;
+  left: 20%;
+}
+
+.text-section-pic4 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  max-width: 12%;
+}
+
+.text-section-pic5 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  max-width: 12%;
+}
+
+.text-section-pic6 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  max-width: 10%;
+}
+
+.text-section-pic7 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  max-width: 10%;
+}
+
+.text-section-pic8 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  max-width: 8%;
+}
+
+.text-section-pic9 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  max-width: 8%;
+}
+
+.before-chart-paragraph {
+  margin-top: 100px !important;
+}
+
+.text-section-pic-open {
+  margin-top: 0px;
+  margin-bottom: 29px;
+  max-width: 12%;
+}
+
+.containerFloatM {
+  margin-top: 100px;
+}
+
+.float {
+  position: relative;
+  -webkit-animation: floatBubble 3s forwards 1 ease-out;
+  animation: floatBubble 3s forwards 1 ease-out;
+}
+@-webkit-keyframes floatBubble {
+  0% {
+    top: 0px;
+  }
+  100% {
+    top: -80px;
+  }
+}
+@keyframes floatBubble {
+  0% {
+    top: 0px;
+  }
+  100% {
+    top: -80px;
+  }
+}
+
+/* -----------------------------  FLAGS ----------------------------- */
+.flag-images {
+  margin-top: 100px;
+  width: 100%;
+}
+.flag-image {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  max-width: 12%;
+  opacity: 0;
+}
+.flag-image2 {
+  margin-right: 100px;
+  margin-left: 100px;
+}
+
+/* -----------------------------  MOVING CIRCLES  ----------------------------- */
+
+.circles-container {
+  width: 100%;
+  height: 20vh;
+  position: relative;
+  margin-top: 140px;
+}
+
+.circles-container2 {
+  width: 100%;
+  height: 20vh;
+  position: relative;
+  margin-top: 140px;
+  display: none;
+}
+
+.circle-one img {
+  position: absolute;
+  top: 0;
+  left: 20%;
+  max-width: 12%;
+}
+
+.circle-two img {
+  position: absolute;
+  top: 0;
+  left: 70%;
+  max-width: 12%;
+}
+
+.circle-one-plus img {
+  position: absolute;
+  top: 0;
+  left: 45%;
+  max-width: 12%;
+}
+
+.circle-one2 img {
+  position: absolute;
+  top: 0;
+  left: 20%;
+  max-width: 12%;
+}
+
+.circle-two2 img {
+  position: absolute;
+  top: 0;
+  left: 70%;
+  max-width: 12%;
+}
+
+.circle-one-plus2 img {
+  position: absolute;
+  top: 0;
+  left: 45%;
+  max-width: 12%;
+}
+
+.move-to-right {
+  position: relative;
+  -webkit-animation: moveRight 3s forwards 1 ease-out;
+  animation: moveRight 3s forwards 1 ease-out;
+}
+
+.move-to-left {
+  position: relative;
+  -webkit-animation: moveLeft 3s forwards 1 ease-out;
+  animation: moveLeft 3s forwards 1 ease-out;
+}
+
+@-webkit-keyframes moveRight {
+  0% {
+    left: 0%;
+  }
+  100% {
+    left: 25%;
+  }
+}
+@keyframes moveLeft {
+  0% {
+    left: 0%;
+  }
+  100% {
+    left: -25%;
+  }
+}
+
+.move-up {
+  position: relative;
+  -webkit-animation: moveUp 3s forwards 1 ease-out;
+  animation: moveUp 3s forwards 1 ease-out;
+}
+
+.move-up2 {
+  position: relative;
+  -webkit-animation: moveUpp 3s forwards 1 ease-out;
+  animation: moveUpp 3s forwards 1 ease-out;
+}
+
+.move-down {
+  position: relative;
+  -webkit-animation: moveDown 3s forwards 1 ease-out;
+  animation: moveDown 3s forwards 1 ease-out;
+}
+
+.entrance-down {
+  position: relative;
+  -webkit-animation: entranceDown 3s forwards 1 ease-out;
+  animation: entranceDown 3s forwards 1 ease-out;
+}
+
+@-webkit-keyframes moveUp {
+  0% {
+    top: 0px;
+  }
+  100% {
+    top: -200px;
+  }
+}
+
+@-webkit-keyframes moveUpp {
+  0% {
+    top: 200px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+
+@keyframes moveDown {
+  0% {
+    top: 200px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+
+@keyframes entranceDown {
+  0% {
+    top: -100px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+
+/* ----------------------------- MOVE SIDEBAR ----------------------------- */
+
+.move_left {
+  -webkit-animation: movetoLeft 2s forwards 1 ease-out;
+  animation: movetoLeft 2s forwards 1 ease-out;
+}
+
+@-webkit-keyframes movetoLeft {
+  0% {
+    left: 0px;
+  }
+  100% {
+    left: -100px;
+  }
+}
+
+.move_back {
+  -webkit-animation: moveBack 2s forwards 1 ease-out;
+  animation: moveBack 2s forwards 1 ease-out;
+}
+
+@-webkit-keyframes moveBack {
+  0% {
+    left: -100px;
+  }
+  100% {
+    left: 0px;
+  }
+}
+
+.circles-text-second-p {
+  opacity: 0;
+}
+
+.circles-container {
+  opacity: 0;
+}
+
+.after-circles-flag {
+  opacity: 0;
+}
+
+.circles-text-section {
+  margin-bottom: 80vh;
+}
+
+.before-mix-paragraph {
+  display: none;
+  z-index: 2000;
+}
+
+.empty-circle-two2 {
+  position: relative;
+  top: -200px;
+  display: none;
+}
+
+.empty-circle-one2 {
+  position: relative;
+  top: 200px;
+  display: none;
+}
+
+/* ----------------------------- 100 PICTOGRAMS CHART ----------------------------- */
+
+.pictchart {
+  margin-top: 5%;
+  width: 100%;
+  height: 650px;
+  display: block;
+}
+
+.container {
+  height: 100%;
+  width: 60%;
+  margin-left: 20%;
+  display: inline;
+  float: left;
+  text-align: center;
+}
+
+.container-small {
+  height: 50%;
+  width: 50%;
+  margin-left: 25%;
+  display: inline;
+  float: left;
+  text-align: center;
+}
+
+.second-pictchart {
+  margin-top: 10%;
+  width: 100%;
+  height: 30vh !important;
+}
+
+.container .line img {
+  width: 30px;
+}
+
+.container-small .line img {
+  width: 40px;
+}
+
+.line3 img {
+  opacity: 0;
+}
+
+.line4 img {
+  opacity: 0;
+}
+
+.container img:hover {
+  -webkit-filter: drop-shadow(2px 2px 2px #222);
+  filter: drop-shadow(2px 2px 2px #222);
+  position: relative;
+  transform: scale(
+    1.5
+  ); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  z-index: 4;
+}
+
+.container-small img:hover {
+  -webkit-filter: drop-shadow(2px 2px 2px #222);
+  filter: drop-shadow(2px 2px 2px #222);
+  position: relative;
+  transform: scale(
+    1.5
+  ); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  z-index: 4;
+}
+
+.divider1 ~ img {
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+
+.divider1 ~ img:hover {
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+  transform: scale(
+    1
+  ); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.divider1 ~ img:hover + .hide {
+  display: none;
+}
+
+.hide {
+  display: none;
+}
+
+img:hover + .hide {
+  display: inline-block;
+  width: 0px;
+  position: relative;
+  left: -28px;
+  top: 5px;
+  color: white;
+  z-index: 5;
+}
+
+/* ----------------------------- DICT SECTION ----------------------------- */
+.text-section-dict {
+  height: 250vh;
+}
+.dict-section {
+  border: 1px solid black;
+  text-align: left;
+  height: 40vh;
+  width: 45%;
+  margin-right: 25%;
+  margin-left: 25%;
+  margin-top: 0px;
+  padding: 30px;
+  box-shadow: 5px 5px black;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 30vh;
+}
+
+.special-paragraph {
+  margin-top: 30vh !important;
+}
+
+.linedict {
+  border-top: 1px solid black;
+  height: 2%;
+}
+.dict-section p.lastp {
+}
+
+.dict-section p.secondp {
+  margin-bottom: 30px;
+}
+.personal-name {
+  transition: font-size 4s;
+}
+.personal-name-big {
+  font-size: 30px;
+}
+.pronunciation {
+  font-size: 15px;
+}
+
+.text-disappear4 {
+  opacity: 1;
+}
+
+.text-disappear3 {
+  opacity: 1;
+}
+.text-disappear2 {
+  opacity: 1;
+}
+.text-disappear1 {
+  opacity: 1;
+}
+.after-dict-flag {
+  position: relative;
+  bottom: -500px;
+}
+
+/* ----------------------------- PORTRAIT GALLERY ----------------------------- */
+
+.content07-gallerycontent {
+  background-color: rgb(243, 186, 28);
+  font-family: "Maison Neue";
+  display: block;
+  opacity: 1;
+  margin-left: 5%;
+  width: 90%;
+  margin-left: 6%;
+  color: black;
+  z-index: 1;
+  text-align: justify;
+  text-justify: inter-word;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.portrait-gallery {
+  height: auto;
+}
+
+.portrait-card {
+  display: inline;
+  float: left;
+  width: 42%;
+  margin-left: 3%;
+  margin-bottom: 5%;
+  border: 1px solid black;
+  text-align: left;
+  padding: 20px;
+  box-shadow: 5px 5px black;
+  position: relative;
+}
+
+.portrait-photo {
+  width: 40%;
+  border: 8px solid #d9bdcc;
+}
+.card-info {
+  display: inline;
+  float: right;
+  width: 50%;
+  height: 95%;
+}
+
+.visibility-info-container {
+  overflow: auto;
+  height: 200px;
+  border-top: 1px solid black;
+}
+.card-info h1 {
+  margin-bottom: 0;
+}
+.card-info h2 {
+  font-style: italic;
+  font-size: 15px;
+  font-weight: bold;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+  margin-top: 2px;
+}
+
+.card-number {
+  float: right;
+  position: relative;
+  width: 2%;
+  bottom: 10px;
+  right: 10px;
+}
+
+.visibility-info {
+  border-bottom: 1px solid black;
+  padding-bottom: 12px;
+  padding-top: 12px;
+  margin: 0;
+}
+
+.visibility-info-occupation {
+  padding-top: 17px !important;
+  padding-bottom: 17px !important;
+}
+
+.visibility-category {
+  font-size: 16px !important;
+  font-weight: bold !important;
+}
+
+.portrait-card-luisa::before {
+  position: absolute;
+  content: url("portraits/clip.svg");
+  width: 5%;
+  top: -3%;
+  left: 6%;
+  z-index: 200;
+}
+
+.portrait-card-pin::before {
+  position: absolute;
+  content: url("portraits/pin.svg");
+  width: 15%;
+  left: -1px;
+  top: -2px;
+}
+.portrait-card-pin {
+}
+
+.portrait-card-rotated {
+  transform: rotate(3deg);
+}
+
+.portrait-card-rotated::before {
+  position: absolute;
+  content: url("portraits/tape.svg");
+  width: 50%;
+  margin-left: 25%;
+  transform: translateY(-62%);
+}
+
+.portrait-card-rotated::after {
+  position: absolute;
+  content: url("portraits/tape.svg");
+  width: 50%;
+  margin-left: -15%;
+  transform: translateY(55%);
+  bottom: 0;
+}
+
+.portrait-card-luisa {
+  position: relative;
+}
+
+.collector-badge {
+  border: 1px solid black;
+  position: absolute;
+  text-align: right;
+  line-height: 20px;
+  padding: 6px;
+  padding-left: 46px;
+  padding-right: 26px;
+  border-style: dashed;
+  background-color: #e8cdda;
+  top: -4%;
+  left: 2%;
+  z-index: 100;
+  width: auto;
+  transform: rotate(-5deg);
+}
+.collector-badge a {
+  color: black;
+  font-family: "Maison Neue";
+  text-decoration: none;
+}
+
+.collector-badge2 {
+  border: 1px solid #e60000;
+  position: absolute;
+  text-align: center;
+  line-height: 20px;
+  padding: 6px;
+  background-color: #e8cdda;
+  top: 2%;
+  right: 2%;
+}
+
+.collector-badge2 a {
+  color: #e60000;
+  font-family: "Maison Neue";
+  text-decoration: none;
+}
+
+.statement-bold {
+  opacity: 0;
+}
+
+.count-section3 {
+  margin-bottom: 60%;
+}
+
+.text-section-gallery {
+  width: 80%;
+  margin-left: 10%;
+  margin-bottom: 15%;
+}
+
+.text-section-gallery p {
+  margin-top: 30px;
+  margin-bottom: 40px;
+  text-align: center;
+  font-family: "Maison Neue";
+  font-size: 30px;
+}
+
+/* ----------------------------- LINE DIV  ----------------------------- */
+
+.line-div {
+  width: 100%;
+  height: 20vh;
+  display: inline-block;
+}
+
+.line-div-big {
+  width: 100%;
+  height: 70vh;
+  display: inline-block;
+  margin-top: 0px;
+}
+
+.line-div1 {
+  width: 48%;
+  height: 100%;
+  margin: 0;
+  float: left;
+}
+.line-div2 {
+  border-left: 1px solid black;
+  width: 51%;
+  height: 100%;
+  margin: 0;
+  float: right;
+}
+/* ----------------------------- FONDAZIONE ZERI  ----------------------------- */
+.zeri-images-container {
+  margin-top: 120px;
+  margin-bottom: 50px;
+}
+
+.zeri-images-container img {
+  max-width: 14%;
+  margin: 0;
+}
+
+/* ----------------------------- DOWNLOAD CONTAINER  ----------------------------- */
+
+.download-section {
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  height: 55vh;
+  position: relative;
+}
+
+.download-1 {
+  padding-top: 60px;
+  margin: 0;
+  width: 48% !important;
+  height: 100%;
+  display: inline;
+  float: left;
+  opacity: 0;
+}
+
+.download-2 {
+  padding-top: 60px;
+  margin: 0;
+  width: 51% !important;
+  height: 100%;
+  float: right;
+  display: inline;
+  border-left: 1px solid black;
+  opacity: 0;
+}
+
+.download-1 a {
+  margin-top: 30px;
+  display: block;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  font-family: "Maison Neue";
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  font-size: 0.7rem;
+  line-height: 1rem;
+}
+
+.download-2 a {
+  margin-top: 30px;
+  display: block;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  font-family: "Maison Neue";
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  font-size: 0.7rem;
+  line-height: 1rem;
+}
+
+.download-1 a img {
+  width: 30%;
+}
+.download-2 a img {
+  width: 30%;
+}
+
+.download-2 a:last-child {
+  margin-top: 0px;
+}
+
+.download-1 a:last-child {
+  margin-top: 0px;
+}
+
+/* ----------------------------- FOOTER  ----------------------------- */
+
+.content07-footer {
+  border-top: 1px solid black;
+  width: 100%;
+  height: 20vh;
+  background-color: rgb(243, 186, 28);
+  margin-bottom: 0;
+  z-index: 700;
+  position: absolute;
+}
+
+.content07-footer p {
+  margin-top: 50px;
+}
+.content07-footer p + p {
+  margin-top: 10px;
+}
+
+/* ----------------------------- FINAL PART TEXTS  ----------------------------- */
+.text-section-big p {
+  font-size: 30px !important;
+  padding-bottom: 50px;
+}
+
+.text-section-big2 p {
+  font-size: 30px !important;
+  padding-bottom: 0px;
+}
+
+.text-section-big {
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+  line-height: 50px;
+}
+
+.text-section-big2 {
+  padding-bottom: 0px;
+  line-height: 50px;
+  margin-top: 60px !important;
+  margin-bottom: 60px !important;
+}
+
+.name-highlight {
+  font-style: italic;
+  font-family: "Highlight";
+  font-size: 50px;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+.smaller-paragraph {
+  width: 80%;
+  margin-left: 10%;
+}
+
+.portraits-intro {
+  margin-bottom: 200px;
+}
+.portraits-intro-p {
+  margin-top: 90px !important;
+}
+
+/* ----------------------------- COUNTING NUMBER  ----------------------------- */
+
+.content01 p {
+  text-align: center;
+  font-family: "Maison Neue";
+  font-size: 30px;
+  margin-right: 7%;
+  margin-left: 7%;
+}
+
+.content02 p {
+  text-align: center;
+  font-family: "Maison Neue";
+  font-size: 30px;
+  margin-right: 7%;
+  margin-left: 7%;
+}
+
+.count {
+  font-weight: bold;
+}
+
+.counter {
+  font-weight: bold;
+  display: inline-block;
+  width: 10%;
+}
+
+.counter3 {
+  font-weight: bold;
+  display: inline-block;
+  width: 5%;
+}
+
+.bold-number {
+  font-weight: bold;
+}
+
+#non-binaryVid {
+  width: 50%;
+}
+
+/* ----------------------------- MAP LEGEND  ----------------------------- */
+.spaced-p {
+  margin-bottom: 150px !important;
+}
+.spaced-p2 {
+  margin-bottom: 80px !important;
+}
+.map-legend {
+  width: 100%;
+  text-align: center;
+  font-family: "Maison Neue";
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  font-size: 12px;
+}
+
+.map-legend2 {
+  letter-spacing: 0.23rem;
+}
+
+.map-legend-Title {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  opacity: 0;
+}
+
+.map-legend-bar {
+  display: inline-block;
+  width: 0%;
+  height: 20px;
+  margin: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(211, 232, 229, 1) 0%,
+    rgba(175, 196, 194, 1) 58%,
+    rgba(109, 136, 134, 1) 100%
+  );
+  -webkit-transition: width 3s ease-in-out;
+  -moz-transition: width 3s ease-in-out;
+  -o-transition: width 3s ease-in-out;
+  transition: width 3s ease-in-out;
+}
+
+.map-legend-bar-fullwidth {
+  width: 80%;
+}
+
+.map-legend-bar-female {
+  background: linear-gradient(
+    90deg,
+    rgba(240, 226, 232, 1) 0%,
+    rgba(232, 205, 218, 1) 58%,
+    rgba(186, 141, 180, 1) 100%
+  );
+}
+
+.map-legend-NumInitial {
+  width: 10%;
+  letter-spacing: 0.75rem;
+  margin-top: 4px;
+  display: inline-block;
+  float: left;
+  position: relative;
+  top: 10px;
+  opacity: 0;
+}
+
+.map-legend-NumFinal {
+  width: 10%;
+  letter-spacing: 0.75rem;
+  margin-top: 4px;
+  display: inline-block;
+  float: right;
+  position: relative;
+  top: 10px;
+  opacity: 0;
+}
+
+/* ----------------------------- CHARTS  BUTTON----------------------------- */
+.switch-btn {
+  background-color: white;
+  padding: 10px 10px;
+  /* border-radius: 20px; */
+  color: black;
+  border: 1.5px solid black;
+  transition-duration: 0.4s;
+  text-transform: uppercase;
+  font-family: "Maison Neue", serif;
+  letter-spacing: 0.75rem;
+  font-size: 0.7rem;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.switch-btn:hover {
+  background-color: #e8ccda;
+  border: 1.5px solid #e8ccda;
+  color: black;
+  box-shadow: 5px 10px #888888;
+  cursor: pointer;
+}
+
+.switch-btn:focus {
+  outline: 0;
+}
+/* ----------------------------- SELECT BUTTON  ----------------------------- */
+
+#inst-countries {
+  margin-bottom: 100px;
+  background-color: white;
+  padding: 10px 10px;
+  text-transform: uppercase;
+  font-family: "Maison Neue", serif;
+  letter-spacing: 0.75rem;
+  font-size: 0.7rem;
+  background-image: url("svg/arrow.svg");
+  background-repeat: no-repeat, repeat;
+  background-position: right 0.7em top 50%, 0 0;
+  background-size: 1.6em auto, 100%;
+  -webkit-appearance: none;
+  padding-right: 25px;
+  transition-duration: 0.4s;
+}
+
+#inst-countries:focus {
+  outline: 0;
+}
+
+#inst-countries:hover {
+  background-color: #e8ccda;
+  border: 1.5px solid #e8ccda;
+  color: black;
+  box-shadow: 5px 10px #888888;
+  cursor: pointer;
+}
+
+/* ----------------------------- MAP CHART  ----------------------------- */
+
+#map-dist {
+  width: 80%;
+  height: 500px !important;
+  border: 1px solid #d9d9d9;
+  margin: 5%;
+  opacity: 0;
+}
+
+/* ----------------------------- OCCUPATION CHART  ----------------------------- */
+
+.occupation-chart {
+  margin-bottom: 20%;
+}
+
+/* ----------------------------- ZOOM MATRIOSKA  ----------------------------- */
+.content06 {
+  margin-left: 0%;
+  background-color: rgb(243, 186, 28);
+  width: 100%;
+  height: 200vh;
+  z-index: -120;
+  overflow: hidden;
+}
+
+#zoom-matrioska {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 30vh;
+  width: 1%;
+  transform: scale(2); /* Change up to 200 for background effect */
+  z-index: -100;
+}
+
+/* ----------------------------- CHARTS  BUTTON----------------------------- */
+.switch-btn {
+  background-color: white;
+  padding: 10px 10px;
+  /* border-radius: 20px; */
+  color: black;
+  border: 1.5px solid black;
+  transition-duration: 0.4s;
+  text-transform: uppercase;
+  font-family: "Maison Neue", serif;
+  letter-spacing: 0.75rem;
+  font-size: 0.7rem;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.switch-btn:hover {
+  background-color: rgb(243, 186, 28);
+  color: black;
+}
+
+.switch-btn:focus {
+  outline: 0;
+}
+
+/* ----------------------------- OCCUPATION ICONS ----------------------------- */
+
+.occupation-icons {
+  width: 90%;
+  height: 14vh;
+  margin-bottom: 20px;
+}
+
+.occupation-icon-1 {
+  float: left;
+  display: block;
+  width: 50%;
+  height: 14vh;
+}
+
+.occupation-icon-2 {
+  float: right;
+  display: block;
+  width: 50%;
+  height: 14vh;
+}
+
+.occupation-icon {
+  width: 10%;
+  margin-left: 25%;
+}
+
+/* ----------------------------- ARTCHIVES ANIMATIONS ----------------------------- */
+
+.artchives-paragraph2 {
+  opacity: 0;
+}
+.artchives-paragraph3 {
+  opacity: 0;
+}
+
+.zeri-image1 {
+  opacity: 0;
+}
+
+.zeri-image2 {
+  opacity: 0;
+}
+
+.zeri-image3 {
+  opacity: 0;
+}
+
+.zeri-image4 {
+  opacity: 0;
+}
+
+.zeri-image5 {
+  opacity: 0;
+}
+
+.after-second-pictchart {
+  opacity: 0;
+}
+
+.question2 {
+  opacity: 0;
+}
+
+.portrait-card {
+  opacity: 0;
+}
+
+.portrait-card-1 {
+  opacity: 1;
+}
+
+.portrait-card-2 {
+  opacity: 1;
+}
+
+/* ----------------------------- RESPONSIVE DESIGN  ----------------------------- */
+
+@media screen and (max-width: 1100px) {
+  .dict-section {
+    width: 60%;
+    margin-right: 20%;
+    margin-left: 20%;
+  }
+  .linedict {
+    height: 0px;
+  }
+
+  .portrait-card {
+    width: 70%;
+    margin-left: 15%;
+  }
+
+  .counter {
+    width: 20%;
+  }
+
+  #alt-block-container {
+    width: 90%;
+    display: block !important;
+    justify-content: none;
+  }
+
+  #alt-occ-male,
+  #alt-occ-female {
+    width: 100%;
+    height: 500px;
+  }
+  .occupation-icons {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .intro p {
+    text-align: center;
+    font-family: "Maison Neue";
+    font-size: 30px;
+    margin-right: 20%;
+    margin-left: 7%;
+    display: none;
+  }
+
+  .text-section p {
+    font-size: 20px;
+  }
+
+  .right-bar a {
+    font-size: 0.6rem;
+    margin-right: 25px;
+    letter-spacing: 0.24rem;
+  }
+
+  .mtrk-sidebar {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 9%;
+    bottom: 0;
+    top: auto;
+    left: 0;
+    margin-left: 0px;
+    text-align: center;
+    animation-name: fadeInLeft;
+    animation-duration: 2s;
+    background-color: white;
+    border-top: 1px solid black;
+    z-index: 90000;
+  }
+
+  #sideline {
+    margin-top: 0px;
+    width: 50px; /* you can use % */
+    height: 70%;
+    display: none;
+  }
+
+  .mtrskimg {
+    position: relative;
+    margin: 0;
+  }
+
+  #mtrsk1 {
+    height: 80%;
+    width: auto;
+    display: inline;
+    margin: 0;
+    margin-right: 10px;
+    margin-left: 0px;
+    margin-top: 45px;
+  }
+
+  #mtrsk2 {
+    height: 70%;
+    width: auto;
+    display: inline;
+    margin: 0;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 40px;
+  }
+
+  #mtrsk3 {
+    height: 60%;
+    width: auto;
+    display: inline;
+    margin: 0;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 40px;
+  }
+
+  #mtrsk4 {
+    height: 50%;
+    width: auto;
+    display: inline;
+    margin: 0;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 40px;
+  }
+
+  #mtrsk5 {
+    height: 40%;
+    width: auto;
+    display: inline;
+    margin: 0;
+    margin-left: 10px;
+    margin-top: 40px;
+  }
+
+  .container .line img {
+    width: 20px;
+  }
+
+  .container-small .line img {
+    width: 20px;
+  }
+
+  .dict-section {
+    width: 90%;
+    margin-left: 0%;
+  }
+
+  .text-disappear2 p {
+    font-size: 13px;
+  }
+
+  .text-disappear3 {
+    font-size: 13px;
+  }
+  .text-disappear4 {
+    font-size: 13px;
+  }
+  .personal-name {
+    font-size: 13px;
+  }
+
+  .portrait-card {
+    width: 70%;
+    margin-left: 10%;
+  }
+
+  .counter {
+    width: 30%;
+  }
+  .counter3 {
+    width: 15%;
+  }
+
+  .test {
+    position: relative;
+    white-space: normal;
+  }
+
+  .test2 {
+    position: relative;
+    white-space: normal;
+  }
+
+  .test3 {
+    position: relative;
+    white-space: normal;
+  }
+
+  .test4 {
+    position: relative;
+    font-weight: bold;
+    white-space: normal;
+  }
+}

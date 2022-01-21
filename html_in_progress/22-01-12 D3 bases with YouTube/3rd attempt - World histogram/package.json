@@ -1,0 +1,14 @@
+{
+  "name": "70478ad33a051c6f",
+  "main": "70478ad33a051c6f@819.js",
+  "version": "819.0.0",
+  "homepage": "https://observablehq.com/d/70478ad33a051c6f",
+  "author": {
+    "name": "wieswies",
+    "url": "https://observablehq.com/@wieswies"
+  },
+  "type": "module",
+  "peerDependencies": {
+    "@observablehq/runtime": "4"
+  }
+}
