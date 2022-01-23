@@ -32,7 +32,7 @@ section {
 /* Index
 Body */
 body {
-  background: url(../img/aa_opening_background.jpg);
+  background: url(../img/miscellaneous/aa_opening_background.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -125,15 +125,45 @@ p.quote {
   letter-spacing: 2px;
 }
 
+p.flow {
+  font-family: "Quosm";
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+}
+
 /* Index
 Hierarchical section layout */
 #home {
-  background-image: url(../img/aa_opening_background.jpg);
+  background-image: url(../img//miscellaneous/aa_opening_background.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
 }
 
+.about {
+  background: rgb(255, 248, 220);
+  align-items: center;
+}
+
+.nomad {
+  position: relative;
+  /*background-image: url(../img/miscellaneous/ae_yellowhouse.jpg);*/
+  background-color: rgba(81, 109, 101);
+}
+
+.storyline {
+  position: relative;
+  background-color: rgb(81, 109, 101);
+}
+
+.seasons {
+  position: relative;
+  background-color: #325461;
+}
+
+/* Index
+Page flows */
 .flow-01 {
   background: rgb(255, 248, 220);
   background: linear-gradient(
@@ -141,12 +171,6 @@ Hierarchical section layout */
     rgba(255, 248, 220, 0) 0%,
     rgba(255, 248, 220, 1) 100%
   );
-}
-
-.about {
-  background: url(../img/ad_flow_2.jpg);
-  background: rgb(255, 248, 220);
-  align-items: center;
 }
 
 .flow-02 {
@@ -159,11 +183,6 @@ Hierarchical section layout */
   );
 }
 
-.storyline {
-  position: relative;
-  background-color: rgb(81, 109, 101);
-}
-
 .flow-03 {
   background: rgb(255, 248, 220);
   background: linear-gradient(
@@ -171,6 +190,24 @@ Hierarchical section layout */
     rgba(255, 248, 220, 1) 0%,
     rgba(116, 137, 125, 1) 57%,
     rgba(81, 109, 101, 1) 84%
+  );
+}
+
+.flow-04 {
+  background: rgb(255, 248, 220);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 248, 220, 1) 0%,
+    rgba(243, 186, 28, 1) 100%
+  );
+}
+
+.flow-05 {
+  background: rgb(81, 109, 101);
+  background: linear-gradient(
+    180deg,
+    rgba(81, 109, 101, 1) 0%,
+    rgba(50, 84, 97, 1) 100%
   );
 }
 
@@ -188,7 +225,8 @@ Floating boxes */
 .opening_portrait {
   width: 300px;
   height: 400px;
-  background: url(../img/ac_portrait_opening.jpg) no-repeat center / cover;
+  background: url(../img/miscellaneous/ac_portrait_opening.jpg) no-repeat center /
+    cover;
   border-radius: 8px;
 }
 
@@ -251,6 +289,13 @@ Floating boxes */
   left: 25px;
   padding: 30px;
   border-radius: 8px;
+}
+
+#nomad_svg {
+  height: 110vh;
+  width: auto;
+  align-items: center;
+  align-content: center;
 }
 
 /* Index

@@ -49,7 +49,8 @@ var path = d3.geoPath()
 // Load world shape AND list of connection
 d3.queue()
   .defer(d3.json, "../data/europe.geo.json")  // World shape
-  .defer(d3.csv, "https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/data_connectionmap.csv") // Position of circles
+  .defer(d3.csv, "https://raw.githubusercontent.com/wieswies/life_in_color/main/life_in_color/data/vg_latlon.csv")
+  //.defer(d3.csv, "https://raw.githubusercontent.com/wieswies/life_in_color/main/life_in_color/data/vg_latlon_names.csv")
   .await(ready);
 
 function ready(error, dataGeo, data) {
@@ -68,12 +69,12 @@ function ready(error, dataGeo, data) {
         .selectAll("path")
         .data(dataGeo.features)
         .enter().append("path")
-            .attr("fill", "#b8b8b8")
+            .attr("fill", "#b8ccb8")
             .attr("d", d3.geoPath()
                 .projection(projection)
             )
             .style("stroke", "#fff")
-            .style("stroke-width", 0)
+            .style("stroke-width", 0.1)
 
     // Add the path
     svg.selectAll("myPath")
@@ -82,7 +83,21 @@ function ready(error, dataGeo, data) {
       .append("path")
         .attr("d", function(d){ return path(d)})
         .style("fill", "none")
-        .style("stroke", "#69b3a2")
-        .style("stroke-width", 1)
+        .style("stroke", "#698888")
+        .style("stroke-width", 0.05)
+      .append("text")
 
+    // svg.selectAll(".labels")
+    //   .data(data)
+    //   .enter().append("text")
+    //   .attr("class", "labels")
+    //   .text(function(d) {return d.place;})
+    //   .attr("x", function(d) {
+    //     return projection([d.lon, d.lat])[0];
+    //   })
+    //   .attr("y", function(d) {
+    //     return projection([d.lon, d.lat])[1];
+    //   })
+    
+    d3.selectAll('svg').attr("transform", "scale(12)");
 }
