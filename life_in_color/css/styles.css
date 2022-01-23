@@ -152,9 +152,14 @@ Hierarchical section layout */
   background-color: rgba(81, 109, 101);
 }
 
-.storyline {
-  position: relative;
-  background-color: rgb(81, 109, 101);
+.axis .domain {
+  display: none;
+}
+.stackedbarchart {
+  background: rgb(255, 248, 220);
+  align-items: center;
+  align-content: center;
+  display: flex;
 }
 
 .seasons {
@@ -278,7 +283,7 @@ Floating boxes */
   margin-top: 0px;
 }
 
-#box_workcount_season {
+.box_stackedbarchart {
   height: 50vh;
   width: 35vw;
   background-color: rgba(255, 248, 220, 1);

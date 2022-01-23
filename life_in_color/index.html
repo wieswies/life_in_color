@@ -9,7 +9,7 @@
     <link rel="stylesheet" media="screen" href="/css/styles.css" />
     <link rel="stylesheet" media="screen" href="/css/timeline.css" />
     <link rel="stylesheet" media="screen" href="/css/nomad.css" />
-    <!-- <link rel="stylesheet" media="screen" href="/css/charts.css" /> -->
+    <link rel="stylesheet" media="screen" href="/css/charts.css" />
     <link rel="shortcut icon" type="image/png" href="/img/ab_pin_browser.png" />
   
     <!--AMCHARTS-->
@@ -20,13 +20,17 @@
     <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
     
     <!--D3-->
-    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script type="text/javascript" src="https://d3js.org/d3.v7.min.js"></script>
+    <script type="text/javascript" src="https://d3js.org/d3.v6.js"></script>
+    <script type="text/javascript" src="https://d3js.org/d3.v4.min.js"></script>
+    <script type="text/javascript" src="js/d3/circle-pack.js"></script>
 
     <!--JQUERY-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
 
   <body>
+  <meta charset="utf-8">
       <header>
         <div class="header_title">life in color</div>
         <nav>
@@ -71,11 +75,12 @@
         </div>
       </div>
     </section>
+
     <section id="about" class="about">
         <div class="timeline">
         <ul>
           <li>
-            <div class="content">
+            <div class="content">>
               <h2 class="timeline_title">1853</h2>
               <p class="timeline_text">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -160,6 +165,7 @@
         the size is proportional to the number of paintings he created from there.</p>
       </div>
     </section>
+
     <section class="nomad">
       <div class="nomad_london hide">
         <h3 class='nomad_title'>London</h3>
@@ -232,9 +238,8 @@
 
       <div id="nomad_svg">
         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-        viewBox="0 0 254.5 334.5" style="enable-background:new 0 0 254.5 334.5;" xml:space="preserve">
+        viewBox="0 0 254.5 334.5" style="height: 1200px;width: 1200px;enable-background:new 0 0 254.5 334.5;" xml:space="preserve">
      <style type="text/css">
-       
          .st0{fill-rule:evenodd;clip-rule:evenodd;fill: rgba(255, 248, 220, 0.12);stroke:rgba(81, 109, 101, 0.5);stroke-width:1.11;stroke-linecap:round;stroke-linejoin:round;}
        
          .st1{fill-rule:evenodd;clip-rule:evenodd;fill:#81B596;stroke:rgb(255, 248, 220);stroke-width:0.8;stroke-linecap:round;stroke-linejoin:round;}
@@ -1912,46 +1917,35 @@
         for which the tracing of date information is hard.  </p>
     </section>
 
-    <section class="about"></section>
+    <section class="stackedbarchart">
+      <div class="box">
+        <div class="box_stackedbarchart">
+          <div class="content">
+            <div id="stackedbarchart">
+              <svg id="stackedbarchatSvg" width="500" height="300"></svg>
+            </div>
+            <script
+            type="text/javascript"
+            src="/script/charts/stackedbarchart.js"
+            ></script>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
 
     <section class="flow-04">
 
     </section>
 
-    
-    <!--CHART TRIAL-->
-    <section class="storyline">
-      <div id="box_workcount_season">
-        <div id="workcount_season"></div>
-      </div>
-        <div id="chartdiv"></div>
-      </div>
-
-        <!-- <div id="workcount"></div>
-        <div id="workcount_sorted"></div> -->
-
-    </section>
-
-
-
-    <section class="flow-03">
-      <div id="animated_createdin"></div>
-    </section>
-
-    <section class="flow-02">
-      <div id="chartdiv"></div>
-    </section>
-
-
-    <script src="..\script\charts\workcount_sorted.js"></script>
+    <!-- <script src="..\script\charts\workcount_sorted.js"></script>
     <script src="..\script\charts\workcount.js"></script>
     <script src="..\script\charts\workcount_season.js"></script>
-    <script src="..\script\maps\animated_createdin.js"></script>
+    <script src="..\script\maps\animated_createdin.js"></script> -->
     <script src="script/maps/animated_locations.js"></script>
     <script src="script/interactive_maps/nomad.js"></script>
-  
-  
-  
-  
+    <!-- <script type="text/javascript" src="script/charts/stackedbarchart.js"></script>
+   -->
   </body>
 </html>
