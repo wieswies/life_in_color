@@ -127,7 +127,7 @@ p.quote {
 
 p.flow {
   font-family: "Quosm";
-  font-size: 20px;
+  font-size: 14px;
   line-height: 30px;
   text-align: center;
 }
@@ -146,25 +146,27 @@ Hierarchical section layout */
   align-items: center;
 }
 
-.nomad {
-  position: relative;
-  /*background-image: url(../img/miscellaneous/ae_yellowhouse.jpg);*/
-  background-color: rgba(81, 109, 101);
-}
-
-.axis .domain {
-  display: none;
-}
 .stackedbarchart {
-  background: rgb(255, 248, 220);
+  background: rgba(175, 171, 178, 0.95);
   align-items: center;
   align-content: center;
   display: flex;
 }
 
+.nomad {
+  position: relative;
+  height: 200vh;
+  /*background-image: url(../img/miscellaneous/ae_yellowhouse.jpg);*/
+  background-color: rgba(81, 109, 101, 0.95);
+}
+
+.axis .domain {
+  display: none;
+}
+
 .seasons {
   position: relative;
-  background-color: #325461;
+  background-color: rgb(175, 171, 178);
 }
 
 /* Index
@@ -183,37 +185,35 @@ Page flows */
   background: linear-gradient(
     180deg,
     rgba(255, 248, 220, 1) 0%,
-    rgba(116, 137, 125, 1) 57%,
-    rgba(81, 109, 101, 1) 84%
+    rgba(175, 171, 178, 0.95)
   );
 }
 
 .flow-03 {
-  background: rgb(255, 248, 220);
+  background: rgb(175, 171, 178);
   background: linear-gradient(
-    0deg,
-    rgba(255, 248, 220, 1) 0%,
-    rgba(116, 137, 125, 1) 57%,
-    rgba(81, 109, 101, 1) 84%
+    180deg,
+    rgba(175, 171, 178, 0.95),
+    rgba(81, 109, 101, 0.95)
   );
 }
 
 .flow-04 {
-  background: rgb(255, 248, 220);
+  background-color: rgb(81, 109, 101);
   background: linear-gradient(
     180deg,
-    rgba(255, 248, 220, 1) 0%,
-    rgba(243, 186, 28, 1) 100%
+    rgba(81, 109, 101, 0.95),
+    rgb(183, 185, 144) 90%
   );
 }
 
 .flow-05 {
-  background: rgb(81, 109, 101);
-  background: linear-gradient(
-    180deg,
-    rgba(81, 109, 101, 1) 0%,
-    rgba(50, 84, 97, 1) 100%
-  );
+  background: rgb(255, 248, 220);
+  background: linear-gradient(0deg, rgb(53, 44, 28), rgb(183, 185, 144) 100%);
+}
+
+.flow-06 {
+  background: rgb(135, 113, 64);
 }
 
 /* Index
@@ -283,24 +283,83 @@ Floating boxes */
   margin-top: 0px;
 }
 
-.box_stackedbarchart {
-  height: 50vh;
-  width: 35vw;
-  background-color: rgba(255, 248, 220, 1);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  left: 25px;
-  padding: 30px;
-  border-radius: 8px;
-}
-
 #nomad_svg {
   height: 110vh;
   width: auto;
   align-items: center;
   align-content: center;
+}
+
+.stackedbarchart_box {
+  position: absolute;
+  width: 400px;
+  height: 270px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  border-radius: 8px;
+  margin-left: 331px;
+  margin-top: 0px;
+}
+
+.stackedbarchart_text {
+  position: absolute;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  height: 270px;
+  border-radius: 8px;
+  right: 55%;
+}
+
+/* Index
+Colormappings */
+img {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+}
+
+.colormapping_text {
+  background-color: rgba(255, 248, 220);
+  font-family: "Quosm-Bold";
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  border-radius: 8px;
+  margin-top: 35px;
+}
+
+.colormap_1 {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 30px;
+  line-height: 330px;
+  /* margin-left: -300px; */
+}
+
+.colormap_2 {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 30px;
+  border-radius: 8px;
+  /* margin-left: -300px;
+  margin-top: 250px; */
 }
 
 /* Index

@@ -10,6 +10,8 @@
     <link rel="stylesheet" media="screen" href="/css/timeline.css" />
     <link rel="stylesheet" media="screen" href="/css/nomad.css" />
     <link rel="stylesheet" media="screen" href="/css/charts.css" />
+    <link rel="stylesheet" media="screen" href="/css/colormappings.css" />
+
     <link rel="shortcut icon" type="image/png" href="/img/ab_pin_browser.png" />
   
     <!--AMCHARTS-->
@@ -63,7 +65,7 @@
         <p class="quote">I dream my painting, <br> and I paint my dream</h1>
     </section>
 
-    <section id="about" class="about">
+    <!-- <section id="about" class="about">
       <div class="box">
         <div class="about_visual"></div>
         <div class="about_text">
@@ -74,15 +76,15 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <section id="about" class="about">
         <div class="timeline">
         <ul>
           <li>
             <div class="image">
-              <a href="poop.com">
-                <span>Get poop</span>
+              <a href="https://www.vangoghmuseum.nl/en/art-and-stories/vincents-life-1853-1890/young-vincent">
+                <span>Discover more about young Vincent</span>
               </a>
             </div>
             <div class="content">
@@ -96,7 +98,9 @@
           </li>
           <li>
             <div class="image">
-              
+              <a href="https://www.vangoghmuseum.nl/en/art-and-stories/vincents-life-1853-1890/looking-for-a-direction">
+                <span>His first years in the world of art</span>
+                </a>
             </div>
             <div class="content">
               <h2 class="timeline_title">1869</h2>
@@ -108,7 +112,11 @@
             </div>
           </li>
           <li>
-            <div class="image"></div>
+            <div class="image">
+            <a href="https://www.vangoghmuseum.nl/en/art-and-stories/vincents-life-1853-1890/looking-for-a-direction">
+              <span>More about his search for direction</span>
+              </a>
+            </div>
             <div class="content">
               <h2 class="timeline_title">1875</h2>
               <p class="timeline_text">
@@ -119,7 +127,11 @@
             </div>
           </li>
           <li>
-            <div class="image"></div>
+            <div class="image">
+            <a href="https://www.vangoghmuseum.nl/en/art-and-stories/vincents-life-1853-1890/first-steps-as-an-artist">
+              <span>Vincent & Theo</span>
+              </a>
+            </div>
             <div class="content">
               <h2 class="timeline_title">1880</h2>
               <p class="timeline_text">
@@ -130,7 +142,11 @@
             </div>
           </li>
           <li>
-            <div class="image"></div>
+            <div class="image">
+              <a href="https://www.vangoghmuseum.nl/en/art-and-stories/vincents-life-1853-1890/first-steps-as-an-artist">
+                <span>The first years as a painter</span>
+                </a>
+            </div>
             <div class="content">
               <h2 class="timeline_title">1883</h2>
               <p class="timeline_text">
@@ -141,7 +157,11 @@
             </div>
           </li>
           <li>
-            <div class="image"></div>
+            <div class="image">
+              <a href="https://www.vangoghmuseum.nl/en/art-and-stories/vincents-life-1853-1890/from-dark-to-light">
+                <span>Becoming Vincent</span>
+                </a>
+            </div>
             <div class="content">
               <h2 class="timeline_title">1886</h2>
               <p class="timeline_text">
@@ -152,13 +172,18 @@
             </div>
           </li>
           <li>
-            <div class="image"></div>
+            <div class="image">
+              <a href="https://www.vangoghmuseum.nl/en/art-and-stories/vincents-life-1853-1890/south-of-france">
+                <span>Discover more about his Southern dream</span>
+              </a>
+            </div>
             <div class="content">
               <h2 class="timeline_title">1889</h2>
               <p class="timeline_text">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                 Obcaecati eligendi alias, ipsum eos minus debitis aperiam
                 accusamus sapiente esse nisi!
+              </a>
               </p>
             </div>
           </li>
@@ -167,6 +192,43 @@
     </section>
 
     <section class="flow-02">
+      <div class="content">
+        <p class="quote">Conscience is a man's compass</h1>
+        <p class="flow"> <br> As an impressionist, Vincent van Gogh aimed <br>
+        to paint directly what he saw. Setting, sceneries, and colors <br>
+        differ between the seasons in which he painted. <br>
+        From over 630 of Vincent's artworks, the season in which <br>
+        they were made can be stated based on the date. <br>
+        <br> From his time in Paris, however, <br>
+        little of the letters he wrote to Theo were kept, <br>
+        for which the tracing of date information is hard.  </p>
+    </section>
+
+    <section class="stackedbarchart">
+      <div class="box">
+        <div class="stackedbarchart_box">
+          <div class="content">
+            <div id="stackedbarchart">
+              <svg id="stackedbarchatSvg" width="400" height="500"></svg>
+            </div>
+            <script
+            type="text/javascript"
+            src="/script/charts/stackedbarchart.js"
+            ></script>
+          </div>
+        </div>
+      </div>
+        <div class="stackedbarchart_text">
+          <div class="content">
+            <h2 class="title">Seasonality of work</h2>
+            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, fuga eos dolorum eligendi officiis architecto debitis maxime placeat! Mollitia quaerat ab officiis necessitatibus? Minima ullam magni placeat vel obcaecati veritatis, provident, modi harum ab maiores unde iste repellendus numquam exercitationem alias commodi ducimus quas consectetur aspernatur. Dolor odit ullam ab?</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="flow-03">
       <div class="content">
         <p class="quote">If you truly love nature <br> you will find beauty everywhere <br></h1>
         <p class="flow"> <br> Vincent painted his dream from different places around Western Europe. <br> 
@@ -255,7 +317,7 @@
      <style type="text/css">
          .st0{fill-rule:evenodd;clip-rule:evenodd;fill: rgba(255, 248, 220, 0.12);stroke:rgba(81, 109, 101, 0.5);stroke-width:1.11;stroke-linecap:round;stroke-linejoin:round;}
        
-         .st1{fill-rule:evenodd;clip-rule:evenodd;fill:#81B596;stroke:rgb(255, 248, 220);stroke-width:0.8;stroke-linecap:round;stroke-linejoin:round;}
+         .st1{fill-rule:evenodd;clip-rule:evenodd;fill:rgb(177, 150, 139);stroke:rgb(255, 248, 220);stroke-width:0.8;stroke-linecap:round;stroke-linejoin:round;}
        .st2{fill-rule:evenodd;clip-rule:evenodd;fill:#E5E5E5;}
        .st3{fill:none;stroke:rgb(81, 109, 101);stroke-width:0.8;stroke-linecap:round;stroke-linejoin:round;}
        .st4{fill:rgb(243, 186, 28);stroke:rgb(255, 248, 220);stroke-width:0.5;}
@@ -1917,48 +1979,114 @@
 
     </section>
 
-    <section class="flow-03">
+    <section class="flow-04">
       <div class="content">
-        <p class="quote">Conscience is a man's compass</h1>
-        <p class="flow"> <br> As an impressionist, Vincent van Gogh aimed <br>
-        to paint directly what he saw. Setting, sceneries, and colors <br>
-        differ between the seasons in which he painted. <br>
-        From over 630 of Vincent's artworks, the season in which <br>
-        they were made can be stated based on the date. <br>
-        <br> From his time in Paris, however, <br>
-        little of the letters he wrote to Theo were kept, <br>
-        for which the tracing of date information is hard.  </p>
-    </section>
-
-    <section class="stackedbarchart">
-      <div class="box">
-        <div class="box_stackedbarchart">
-          <div class="content">
-            <div id="stackedbarchart">
-              <svg id="stackedbarchatSvg" width="500" height="300"></svg>
-            </div>
-            <script
-            type="text/javascript"
-            src="/script/charts/stackedbarchart.js"
-            ></script>
-          </div>
-        </div>
+        <p class="quote">I put my heart and my soul into my work, <br> and I have lost my mind in the process</p>
+        <p class="flow"> <br> Vincent started to show signs of confusion in Arles, <br>
+        as living together with artist Paul Gauguin caused <br>
+        them to have heated discussions about their work. <br>
+        Vincent cut off his ear, and was hospitalized. <br>
+        <br>
+        However, throughout his artistic journey,<br>
+        his lust for life, nature, people and art <br>
+        remained ever present. <br>
+        <br>
+        The artist always got back behind the canvas. <br>
+        <br> 
+        Can art speak for the soul? </p>
       </div>
     </section>
 
+    <section class="flow-05"></section>
 
-
-    <section class="flow-04">
-
+    <section class="colormapping_thehague">
+      <div class="box colormap_1">
+        <img src="img/colormappings/thehague_1.jpg"></div>
+      </div>
+      <div class="box colormap_2">
+        <img src="img/colormappings/thehague_2.jpg"></div>
+      </div>
+      <div class="box colormapping_text">The Hague</div>
+    </section>
+    
+    <section class="colormapping_drenthe">
+      <div class="box colormap_1">
+        <img src="img/colormappings/drenthe_1.jpg"></div>
+      </div>
+      <div class="box colormapping_text">Drenthe</div>
     </section>
 
-    <!-- <script src="..\script\charts\workcount_sorted.js"></script>
-    <script src="..\script\charts\workcount.js"></script>
-    <script src="..\script\charts\workcount_season.js"></script>
-    <script src="..\script\maps\animated_createdin.js"></script> -->
-    <script src="script/maps/animated_locations.js"></script>
+    <section class="colormapping_amsterdam">
+      <div class="box colormap_1">
+        <img src="img/colormappings/amsterdam_1.jpg"></div>
+      </div>
+      <div class="box colormap_2">
+        <img src="img/colormappings/Amsterdam_2.jpg"></div>
+      </div>
+      <div class="box colormapping_text">Amsterdam</div>
+    </section>
+
+    <section class="colormapping_antwerp">
+      <div class="box colormap_1">
+        <img src="img/colormappings/antwerp_1.jpg"></div>
+      </div>
+      <div class="box colormap_2">
+        <img src="img/colormappings/antwerp_2.jpg"></div>
+      </div>
+      <div class="box colormapping_text">Antwerp</div>
+    </section>
+
+    <section class="colormapping_nuenen">
+      <div class="box colormap_1">
+        <img src="img/colormappings/nuenen_1.jpg"></div>
+      </div>
+      <div class="box colormap_2">
+        <img src="img/colormappings/nuenen_2.jpg"></div>
+      </div>
+      <div class="box colormapping_text">Nuenen</div>
+    </section>
+
+    <section class="colormapping_paris">
+      <div class="box colormap_1">
+        <img src="img/colormappings/paris_1.jpg"></div>
+      </div>
+      <div class="box colormap_2">
+        <img src="img/colormappings/paris_2.jpg"></div>
+      </div>
+      <div class="box colormapping_text">Paris</div>
+    </section>
+
+    <section class="colormapping_arles">
+      <div class="box colormap_1">
+        <img src="img/colormappings/arles_1.jpg"></div>
+      </div>
+      <div class="box colormap_2">
+        <img src="img/colormappings/arles_2.jpg"></div>
+      </div>
+      <div class="box colormapping_text">Arles</div>
+    </section>
+
+    <section class="colormapping_saintremy">
+      <div class="box colormap_1">
+        <img src="img/colormappings/saintremy_1.jpg"></div>
+      </div>
+      <div class="box colormap_2">
+        <img src="img/colormappings/saintremy_2.jpg"></div>
+      </div>
+      <div class="box colormapping_text">Saint-Rémy</div>
+    </section>
+
+    <section class="colormapping_auverssuroise">
+      <div class="box colormap_1">
+        <img src="img/colormappings/auverssuroise_1.jpg"></div>
+      </div>
+      <div class="box colormap_2">
+        <img src="img/colormappings/auverssuroise_2.jpg"></div>
+      </div>
+      <div class="box colormapping_text">Auvers-sur-Oise</div>
+    </section>
+
     <script src="script/interactive_maps/nomad.js"></script>
-    <!-- <script type="text/javascript" src="script/charts/stackedbarchart.js"></script>
-   -->
+
   </body>
 </html>
